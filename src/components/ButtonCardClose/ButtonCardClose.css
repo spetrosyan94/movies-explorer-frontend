@@ -1,0 +1,26 @@
+.button-card-close {
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #313131;
+  background-image: url(../../images/svg/btn-card-close.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 9px 9px;
+
+  width: 24px;
+  height: 24px;
+
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+
+@media (hover: hover) {
+  .button-card-close:hover {
+    opacity: .7;
+  }
+}

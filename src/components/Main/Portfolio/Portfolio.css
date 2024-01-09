@@ -1,0 +1,78 @@
+.portfolio {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.portfolio__container {
+  box-sizing: border-box;
+  width: 91.3%;
+  margin: 0 auto;
+}
+
+.portfolio__title {
+  padding: 0;
+  margin: 0;
+  padding-top: calc(70px + 20 * (100vw - 320px) / 448);
+  padding-bottom: calc(40px + 10 * (100vw - 320px) / 448);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: calc(14px + 4 * (100vw - 320px) / 448);
+  font-weight: 400;
+  line-height: 1.43;
+  opacity: 0.6;
+}
+
+.portfolio__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  padding-bottom: calc(70px + 20 * (100vw - 320px) / 448);
+}
+
+.portfolio__element:not(:last-child) {
+  border-bottom: 1px solid #DADADA;
+  padding-bottom: 19px;
+  margin-bottom: 19px;
+}
+
+.portfolio__link {
+  display: flex;
+  justify-content: space-between;
+  color: #FFF;
+  font-size: calc(18px + 10 * (100vw - 320px) / 448);
+  font-weight: 400;
+  line-height: 1.56;
+  letter-spacing: -0.04em;
+
+  text-decoration: none;
+  position: relative;
+  opacity: 1;
+
+  transition: all .5s ease;
+}
+
+/* Выключает ховер на мобильных устройствах */
+@media (hover: hover) {
+  .portfolio__link:hover {
+    opacity: .5;
+  }
+}
+
+@media (min-width: 768px) {
+  .portfolio__title {
+    padding-top: calc(90px + 10 * (100vw - 768px) / 512);
+    padding-bottom: 50px;
+    font-size: 18px;
+  }
+
+  .portfolio__link {
+    font-size: calc(28px + 2 * (100vw - 768px) / 512);
+    line-height: 1.7;
+  }
+
+  .portfolio__list {
+    padding-bottom: calc(90px + 35 * (100vw - 768px) / 512);
+  }
+
+}
+
+@media (min-width: 1280px) {}

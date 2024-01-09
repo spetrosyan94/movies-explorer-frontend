@@ -1,0 +1,16 @@
+.movies {
+  box-sizing: border-box;
+  width: calc(300px + 408 * (100vw - 320px) / 448);
+  margin: 0 auto;
+
+}
+
+
+@media (min-width: 768px) {
+  .movies {
+    width: calc(708px + 432 * (100vw - 768px) / 512);
+  }
+
+}
+
+@media (min-width: 1280px) {}

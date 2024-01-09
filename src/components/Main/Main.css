@@ -1,0 +1,13 @@
+.main {
+  /* box-shadow: 0 0 0 1px blue; */
+  background-color: #202020;
+  box-sizing: border-box;
+
+  min-width: 320px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* min-height: 630px; */
+}

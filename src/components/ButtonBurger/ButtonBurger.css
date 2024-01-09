@@ -1,0 +1,33 @@
+.button-burger {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin: 0;
+  /* position: relative; */
+  border: none;
+  background-image: url("../../images/svg/icon-main.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* убрать белый фон background-color у инпута */
+  background-color: transparent;
+  cursor: pointer;
+  transition: opacity .3s linear;
+}
+
+.button-burger::after {
+  content: '';
+  border-bottom: 1px solid #fff;
+}
+
+@media (hover:hover) {
+  .button-burger:hover {
+    opacity: .6;
+  }
+}
+
+/* @media (min-width: 576px) {
+  .button-burger {
+    width: 40px;
+    height: 43px;
+  }
+} */

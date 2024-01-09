@@ -1,0 +1,21 @@
+.logo {
+  width: 38px;
+  height: 38px;
+}
+
+.logo__img {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #ffffff;
+
+  transition: opacity .3s ease;
+  opacity: 1;
+}
+
+
+@media (hover: hover) {
+  .logo__img:hover {
+    opacity: .7;
+  }
+}

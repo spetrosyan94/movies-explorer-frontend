@@ -1,0 +1,196 @@
+.about-project {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.about-project__container {
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  /* Адаптивность паддингов */
+  width: 88.75%;
+  min-width: 284px;
+  max-width: 668px;
+}
+
+
+.about-project__title {
+  padding: 0;
+  margin: 0;
+  /* font-size: 18px;
+    /* Формула адаптивного шрифта */
+  font-size: calc(18px + 4 * (100vw - 320px) / 448);
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.04em;
+
+  border-bottom: 1px solid;
+  padding-top: calc(70px + 20 * (100vw - 320px) / 448);
+  margin-bottom: calc(60px + 10 * (100vw - 320px) / 448);
+  padding-bottom: calc(28px - 5 * (100vw - 320px) / 448);
+}
+
+.about-project__text-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(284px, 319px));
+  justify-content: center;
+  align-items: start;
+  gap: 0 10px;
+}
+
+.about-project__text-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.about-project__subtitle {
+  padding: 0;
+  margin: 0;
+  padding-bottom: calc(16px + 6 * (100vw - 320px) / 448);
+  font-size: calc(18px + 2 * (100vw - 320px) / 448);
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.04em;
+}
+
+.about-project__paragraph {
+  padding: 0;
+  margin: 0;
+  margin-bottom: calc(56px + 37 * (100vw - 320px) / 448);
+  font-size: calc(11px + 1 * (100vw - 320px) / 448);
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.about-project__progress-container {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  grid-template-rows: 36px 20px;
+  gap: 10px 0;
+  justify-content: space-between;
+  margin-bottom: calc(69px + 21 * (100vw - 320px) / 448);
+
+  transition: all .5s ease;
+}
+
+.about-project__progress-element_second {
+  background-color: #3DDC84;
+}
+
+.about-project__progress-element_first {
+  background-color: #303030;
+}
+
+.about-project__progress-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-project__progress-element__text {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: calc(11px + 3 * (100vw - 320px) / 448);
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text_color_progress-bar_first {
+  color: #000;
+}
+
+.about-project__progress-element__caption {
+  padding: 0;
+  margin: 0;
+  color: #A0A0A0;
+  text-align: center;
+  font-size: calc(11px + 3 * (100vw - 320px) / 448);
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (min-width: 768px) {
+  .about-project__container {
+    width: 86.9%;
+    min-width: 668px;
+    max-width: 1140px;
+  }
+
+  .about-project__progress-container {
+    margin-bottom: calc(90px + 20 * (100vw - 768px) / 512);
+  }
+
+  .about-project__title {
+    font-size: 22px;
+    padding-bottom: 23px;
+    padding-top: calc(90px + 20 * (100vw - 768px) / 512);
+
+  }
+
+  .about-project__subtitle {
+    font-size: 20px;
+    padding-bottom: calc(22px + 4 * (100vw - 768px) / 512);
+  }
+
+  .about-project__paragraph {
+    margin-bottom: calc(93px + 17 * (100vw - 768px) / 512);
+    font-size: calc(12px + 2 * (100vw - 768px) / 512);
+    line-height: 1.5;
+  }
+
+  .about-project__progress-element__caption {
+    font-size: 14px;
+  }
+
+  .about-project__progress-element__text {
+    font-size: 14px;
+  }
+
+  .about-project__text-element {
+    width: 97%;
+    /* max-width: 550px; */
+  }
+
+  .about-project__text-list {
+    /* width: 47.8%; */
+    grid-template-columns: repeat(auto-fit, minmax(319px, 1fr));
+    justify-content: space-between;
+
+  }
+
+  .about-project__progress-container {
+    grid-template-columns: 21% 1fr;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about-project__container {
+    width: 89%;
+    min-width: 1140px;
+    max-width: none;
+  }
+
+  .about-project__paragraph {
+    font-size: calc(12px + 2 * (100vw - 768px) / 512);
+    line-height: 1.42;
+  }
+
+  .about-project__progress-element__caption {
+    font-weight: 500;
+  }
+
+  /* .about-project__title {
+    padding-top: 50px;
+    padding-bottom: 102px;
+
+    align-self: flex-start;
+    text-align: left;
+  } */
+}
