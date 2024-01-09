@@ -216,7 +216,7 @@
   .login__btn-edit:hover,
   .login__btn-exit:hover,
   .login__link:hover {
-    opacity: .7;
+    opacity: .8;
   }
 
 }

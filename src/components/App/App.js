@@ -10,13 +10,14 @@ import SavedMovies from '../SavedMovies/SavedMovies';
 import NotFound from '../NotFound/NotFound';
 
 import Profile from '../Profile/Profile';
+import Register from '../Register/Register';
+import Login from '../Login/Login';
 
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 import CurrentUserContext from '../../contexts/CurrentUserContext';
 
-import Register from '../Register/Register';
-import Login from '../Login/Login';
+
 
 function App() {
 
@@ -46,10 +47,6 @@ function App() {
     <CurrentUserContext.Provider value={currentUser}>
 
       <div className="app-container">
-
-        {/* <Header loggedIn={loggedIn}></Header> */}
-
-        {/* {location.pathname !== "/*" && <Header loggedIn={loggedIn}></Header>} */}
 
         {pathsHeader.includes(location) && (
           <Header
